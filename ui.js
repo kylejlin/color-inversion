@@ -17,7 +17,7 @@ fileUploader.addEventListener('change', function() {
       invertedImg.src = invertedImgDataURL;
       
       downloader.href = invertedImgDataURL;
-      downloader.download = downloadedFileNameInput.input ? downloadedFileNameInput : '(inverted color) ' + fileName;
+      downloader.download = downloadedFileNameInput.value ? downloadedFileNameInput : '(inverted color) ' + fileName;
     });
             
     reader.readAsDataURL(file);
