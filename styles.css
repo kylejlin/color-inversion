@@ -3,6 +3,7 @@ html, body {
   background-color: white;
   color: #303030;
   padding: 10px;
+  font-size: 125%;
 }
 
 h1 {
@@ -11,7 +12,7 @@ h1 {
   
   margin: 0;
   padding: 0;
-  padding-left: 25px;
+  padding-left: 40px;
   padding-top: 5px;
   padding-bottom: 5px;
   border: 0;
@@ -23,9 +24,16 @@ h1 {
   width: 100%;
 }
 
+#main-body {
+  padding: 15px;
+}
+
 a {
   text-decoration: none;
   font-weight: bold;
+  border: black solid 1px;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 img {
