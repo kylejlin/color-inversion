@@ -3,7 +3,7 @@ var originalImg = document.getElementById('original');
 var invertedImg = document.getElementById('inverted');
 
 fileUploader.addEventListener('change', function() {
-  var file = fileInput.files[0];
+  var file = fileUploader.files[0];
   var reader = new FileReader();
         
   if (file instanceof File && /\.(jpe?g|png|gif)$/i.test(file.name)) {
