@@ -17,11 +17,15 @@ fileUploader.addEventListener('change', function() {
       invertedImg.src = invertedImgDataURL;
       
       downloader.href = invertedImgDataURL;
-      downloader.download = downloadedFileNameInput.value ? downloadedFileNameInput : '(inverted color) ' + fileName;
+      downloadedFileNameInput.value = '(inverted color) ' + fileName;
     });
             
     reader.readAsDataURL(file);
   } else {
     error('As of now, this tool only supports jpg, jpeg, png, and gif files.');
   }
+});
+
+downloader.addEventListener('click', function() {
+  downloader.download = downloadedFileNameInput.value;
 });
