@@ -1,0 +1,14 @@
+html, body {
+  font: "Open Sans", Verdana, Arial;
+  background-color: #101010;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+img {
+  display: block;
+}
