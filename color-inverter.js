@@ -14,7 +14,8 @@ function invertColors(img) {
     data[i + 2] = 0xFF - data[i + 2];
   }
   
-  ctx.putImageData(data, 0, 0);
+  var inversedImageData = new ImageData(data);
+  ctx.putImageData(inversedImageData, 0, 0);
   
   var inversedImg = document.createElement('img');
   inversedImg.width = img.width;
